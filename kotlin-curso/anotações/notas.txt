@@ -6,7 +6,7 @@ git status
 git add . ou git add -A
 
 erro ->$ git commit -m "inclusão das anotações do curso de git/github"
-solução:
+solução: (peguei no site da alura https://cursos.alura.com.br/forum/topico-duvidas-git-commit-mensagem-erro-fatal-104720)
 git config user.name "seu-usersaneme"
 git config user.email "seu-email"
 
