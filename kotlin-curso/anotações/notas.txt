@@ -1,0 +1,6 @@
+anotações d codigos novos
+
+git bash
+git clone link
+git status
+git add . ou git add -A
