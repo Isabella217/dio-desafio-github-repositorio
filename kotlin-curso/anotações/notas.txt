@@ -4,3 +4,10 @@ git bash
 git clone link
 git status
 git add . ou git add -A
+
+erro ->$ git commit -m "inclusão das anotações do curso de git/github"
+solução:
+git config user.name "seu-usersaneme"
+git config user.email "seu-email"
+
+$ git push origin main
