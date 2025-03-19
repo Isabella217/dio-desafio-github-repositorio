@@ -1,4 +1,4 @@
-anotações d codigos novos
+anotações de codigos novos
 
 git bash
 git clone link
@@ -11,3 +11,47 @@ git config user.name "seu-usersaneme"
 git config user.email "seu-email"
 
 $ git push origin main
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+kotlin
+
+println("")
+print("")
+
+package pacote1 //nome pacote
+-----------------------------------------
+
+função:
+
+-----------------------------------------
+fun printMessage(message: String): Unit {                               // 1
+    println(message)
+}
+//message: String//parametro do tipo string
+//Unit//tipo retorno no caso nada
+*****************************************
+fun printMessageWithPrefix(message: String, prefix: String = "Info"//prefixo com valr padrao) {  // 2
+    println("[$prefix] $message")
+}
+obs: se ninguem passar nada sera atribuido o valor info
+*****************************************
+
+fun sum(x: Int, y: Int): Int {                                          // 3
+    return x + y
+}
+*****************************************
+fun multiply(x: Int, y: Int) = x * y                                    // 4 no caso da funçao ser muito simples
+*****************************************
+fun main() {
+    printMessage("Hello")                                               // 5                    
+    printMessageWithPrefix("Hello", "Log")                              // 6
+    printMessageWithPrefix("Hello")                                     // 7
+    printMessageWithPrefix(prefix = "Log", message = "Hello")           // 8
+    println(sum(1, 2))                                                  // 9
+    println(multiply(2, 4))                                             // 10
+}
+****************************************
+fun printAll(vararg messages: String) {                            // 1 vararg passa varios valores no caso varias strings
+    for (m in messages) println(m)
+}
+
